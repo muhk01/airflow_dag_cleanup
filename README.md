@@ -13,4 +13,5 @@ LIST_HOST = [{"alias": "dev-airflow-1", "host": "172.172.172.1"},
 
 # Result
 
+
 ![Result](https://raw.githubusercontent.com/muhk01/airflow_dag_log_cleanup/main/img/DAG.PNG)
