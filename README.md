@@ -12,4 +12,4 @@ LIST_HOST = [{"alias": "dev-airflow-1", "host": "172.172.172.1"},
   this example will create dynamic task with to task to clean on hosts 172.172.172.1, and 172.172.172.2
 
 Result
-![alt text]([http://url/to/img.png](https://raw.githubusercontent.com/muhk01/airflow_dag_log_cleanup/main/img/DAG.PNG)https://raw.githubusercontent.com/muhk01/airflow_dag_log_cleanup/main/img/DAG.PNG)
+![Result]((https://raw.githubusercontent.com/muhk01/airflow_dag_log_cleanup/main/img/DAG.PNG)https://raw.githubusercontent.com/muhk01/airflow_dag_log_cleanup/main/img/DAG.PNG)
