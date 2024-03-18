@@ -19,10 +19,10 @@ LIST_HOST = [{"alias": "dev-airflow-1", "host": "172.172.172.1"},
 
 cleanup_command_template = """
 SSH_COMMAND="/usr/bin/sshpass -p {creds_val} ssh -v your-hostname@{host}"
-DELETE_LOG=$($SSH_COMMAND find {log_folder}/*/* -name '*.log' -type f -mtime +{retention_time} -delete)
+DELETE_LOG=$($SSH_COMMAND -t 'find {log_folder}/*/* -name '*.log' -type f -mtime +{retention_time} -delete')
 echo "Log Deletion .."
 echo "$DELETE_LOG"
-DELETE_EMPTY_FOLDER=$($SSH_COMMAND find {log_folder}/*/ -empty -type d -delete)
+DELETE_EMPTY_FOLDER=$($SSH_COMMAND -t 'find {log_folder}/*/ -empty -type d -delete')
 echo "$DELETE_EMPTY_FOLDER"
 echo "complete delete empty folder"
 """
